@@ -1,0 +1,239 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap');
+
+html {
+    scroll-behavior: smooth;
+}
+
+section {
+  scroll-margin-top: 100px; /* height of your fixed header */
+}
+
+body {
+  font-family: 'Open Sans', serif;
+  font-weight: 600;
+}
+
+p {
+    color: black;
+}
+.left_float {
+  width: 50%; /* Needs a width less than 100% */
+  margin-left: 0; /* Or 'auto' will work too */
+  margin-right: auto;
+}
+h2 {
+  color: rgb(52, 86, 131);
+}
+
+.stylish-button {
+  background-color: #2f455c; /* Vibrant blue background */
+  color: white; /* White text */
+  padding: 12px 24px; /* Ample padding */
+  border: none; /* Remove default border */
+  border-radius: 5px; /* Softly rounded corners */
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+
+  text-decoration: none;     /* remove underline */
+  display: inline-block;     /* allow padding */
+  cursor: pointer;
+
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.233); /* Subtle shadow */
+  transition: background-color 0.3s, transform 0.2s, box-shadow 0.3s; /* Smooth transitions for effects */
+}
+
+.icon-button {
+  width: 50px;
+  height: 50px;
+  border-radius: 5px; /* Softly rounded corners */
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.233); /* Subtle shadow */
+  transition: background-color 0.3s, transform 0.2s, box-shadow 0.3s; /* Smooth transitions for effects */
+  
+  display: inline-block;
+}
+
+.stylish-button:hover {
+  background-color: #75a0d1; /* New background color on hover (darker green) */
+  transform: translateY(-2px);
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.25);
+}
+
+.stylish-button:active {
+  transform: translateY(0);
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2);
+}
+
+.header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background-color: #ecf1f5;
+    padding: 12px 24px; /* Ample padding */
+    border: none; /* Remove default border */
+    border-radius: 5px; /* Softly rounded corners */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.container {
+background-color: #ecf1f5; /* Vibrant blue background */
+  color: white; /* White text */
+  padding: 12px 24px; /* Ample padding */
+  border: none; /* Remove default border */
+  border-radius: 5px; /* Softly rounded corners */
+}
+
+.project-container {
+background-color: #eaf0f5; /* Vibrant blue background */
+  color: white; /* White text */
+  padding: 12px 24px; /* Ample padding */
+  border: none; /* Remove default border */
+  border-radius: 5px; /* Softly rounded corners */
+  width: 75%; /* Or a fixed width like 300px */
+  max-width: 650px;
+  margin-left: auto;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.233); /* Subtle shadow */
+  margin-right: auto;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+
+
+.image-box {
+  width: 300px;           /* change size as needed */
+  height: 200px;
+  overflow: hidden;       /* crops the image */
+  border-radius: 5px;    /* optional */
+}
+
+.pfp-button {
+  border: solid;
+  border-color: #2f455c;
+  padding: 0;
+  border-radius: 50%;       /* makes the button circular */
+  overflow: hidden;         /* clips the image inside */
+  width: 60px;              /* size of your button */
+  height: 60px;
+  cursor: pointer;
+  background-color: transparent; /* no default button bg */
+  display: inline-block;
+}
+
+.pfp-button img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;        /* cover the button area without distortion */
+  display: block;
+}
+/* Image styling */
+.image-box img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;      /* crops + centers */
+  object-position: center;
+  transform: scale(1);  /* zoom level */
+}
+
+
+.Hbox {
+    display: flex;
+    gap: 20px;
+
+    justify-content: center;
+}
+
+.left {
+  width: auto;
+  display:inline-block;
+}
+.right {
+  width:auto;
+  text-align:right;
+  vertical-align:text-top;
+  display:inline-block;
+
+}
+
+.skill {
+    width: auto;
+    display:inline-block;
+    background-color: None;
+    color: rgb(0, 0, 0); /* White text */
+    border:3px solid rgb(136, 236, 178);
+    padding: 4px 4px; /* Ample padding */
+    border-radius: 5px; /* Softly rounded corners */
+     transform: scale(1);  /* zoom level */
+     transition: transform 0.2s
+}
+
+.skill:hover{
+     transform: scale(1.1);  /* zoom level */
+}
+
+
+
+.gif-container {
+  position: relative;
+  width: 100%; /* set to your image width */
+  height: 200px; /* set to your image height */
+}
+
+.static-img,
+.animated-gif {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+
+  transition: opacity 0.3s ease;
+}
+
+.animated-gif {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.gif-container:hover .animated-gif {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.gif-container:hover .static-img {
+  opacity: 0;
+}
+
+
+.contacts {
+    justify-content: center;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    gap: 90px;
+}
+
+.spacer {
+    height: 60px;
+}
+
+.contact {
+text-decoration: none;   /* removes underline */
+  color: rgb(38, 70, 73);          /* uses surrounding text color */
+  transition: color 0.2s ease, opacity 0.2s ease;
+}
+
+a:hover {
+  opacity: 0.7;
+}
+
+.widthstop {
+max-width: 900px;    /* or whatever max width you want */
+  margin: 0 auto;       /* centers container horizontally */
+  box-sizing: border-box; /* makes padding included in width */
+}
