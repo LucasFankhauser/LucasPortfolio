@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>LucasFankhauser</title>
+    <link rel="stylesheet" href="styles/index.css" />
+</head>
+<body>
+
+    <header class="header">
+        <a href="#contact-me" class="pfp-button" aria-label="Profile Picture">
+            <img src="images/PFP.PNG" alt="Profile Picture" />
+        </a>
+        <nav class="button-group" role="navigation" aria-label="Primary">
+            <a href="#about-me" class="stylish-button">About</a>
+            <a href="#projects" class="stylish-button">Projects</a>
+            <a href="#contact-me" class="stylish-button">Contact</a>
+        </nav>
+    </header>
+
+    <main class="widthstop">
+
+        <!-- About Me Section -->
+        <section id="about-me">
+            <h2>About Me</h2>
+            <p>
+                I am currently a student at Butte Community College studying Computer Science and Electrical Engineering. 
+                I am interested in all aspects of computers but am particularly interested in 
+                Game Design, computer graphics and simulation, computer architecture, and designing large code projects.
+            </p>
+        </section>
+
+        <div class="spacer"></div>
+
+        <!-- Projects Section -->
+        <section id="projects">
+            <h2>Projects</h2>
+
+            <!-- Revenge of the Cactus -->
+            <article class="project-container">
+                <div class="Hbox">
+                    <div class="left">
+                        <h3>Revenge of the Cactus</h3>
+                        <p>A self-developed and published video game that features combat, multiple enemies, complex upgrades, and more!</p>
+                        <p>2020 - Current</p>
+                        <div class="skills">
+                            <span class="skill">GDScript</span>
+                            <span class="skill">Godot</span>
+                            <span class="skill">GSSL</span>
+                            <span class="skill">Aesprite</span>
+                        </div>
+                    </div>
+
+                    <div class="right">
+                        <div class="gif-container">
+                            <img class="static-img" src="images/Aura Ability.png" alt="Aura Ability screenshot" />
+                            <video
+                                class="animated-gif gif-video"
+                                src="videos/Gameplay.mp4"
+                                autoplay
+                                loop
+                                muted
+                                playsinline
+                            ></video>
+                        </div>
+                        <div class="Hbox" style="margin-top: 5px; justify-content: center; gap: 10px;">
+                            <a href="https://docs.google.com/document/d/1qsg3FaNpevJTWrVlHPI5m75RJ0BMrCZYSeail_e296g/edit?tab=t.0" class="stylish-button">Explore</a>
+                            <a href="https://lucasdahippo.itch.io/zombshooter" class="stylish-button" style="padding: 5.5px 7px;">
+                                <img src="images/itch.svg" alt="Itch.io logo" width="30" height="30" />
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Super Auto Pets Clone -->
+            <article class="project-container">
+                <div class="Hbox">
+                    <div class="left">
+                        <h3>Super Auto Pets Clone</h3>
+                        <p>This project was a challenge for myself to recreate the popular game "Super Auto Pets". Through this project I recreated all essential mechanics in the game from scratch such as custom GUI, animation, networking, and gameplay systems.</p>
+                        <p>2/7/24 - 2/14/24</p>
+                        <div class="skills">
+                            <span class="skill">Python</span>
+                            <span class="skill">Pygame</span>
+                            <span class="skill">JSON</span>
+                            <span class="skill">Networking</span>
+                        </div>
+                    </div>
+
+                    <div class="right">
+                        <div class="gif-container">
+                            <img class="static-img" src="images/AutoPetsClone.png" alt="Super Auto Pets Clone screenshot" />
+                            <video
+                                class="animated-gif gif-video"
+                                src="videos/SuperAutoPets.mp4"
+                                autoplay
+                                loop
+                                muted
+                                playsinline
+                            ></video>
+                        </div>
+                        <div style="margin-top: 5px; text-align: center;">
+                            <a href="https://docs.google.com/document/d/17DgpfvqG2htcXiPJsSpTuL5IFLQ5N4wC_YijSGe7hfA/edit?tab=t.0" class="stylish-button">Explore</a>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <!-- 2D Block Game -->
+            <article class="project-container">
+                <div class="Hbox">
+                    <div class="left">
+                        <h3>2D Block Game</h3>
+                        <p>This project was a prototype for creating a 2D block game similar to Terraria. The project entailed creating custom procedural terrain generation, saving/loading systems, a block tiling system, and basic physics/collision.</p>
+                        <p>2020 - 2025</p>
+                        <div class="skills">
+                            <span class="skill">Python</span>
+                            <span class="skill">Pygame</span>
+                        </div>
+                    </div>
+
+                    <div class="right">
+                        <div class="gif-container">
+                            <img class="static-img" src="images/PygameTerraria.png" alt="2D Block Game screenshot" />
+                            <video
+                                class="animated-gif gif-video"
+                                src="videos/Pygame Terraria.mp4"
+                                autoplay
+                                loop
+                                muted
+                                playsinline
+                            ></video>
+                        </div>
+                        <div style="margin-top: 5px; text-align: center;">
+                            <a href="https://docs.google.com/document/d/1x_lE5lMpfgGgQwpgoox5c_PKCp8ywH0oedK5DWR8lXM/edit?tab=t.0" class="stylish-button">Explore</a>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Factory Game Prototype -->
+            <article class="project-container">
+                <div class="Hbox">
+                    <div class="left">
+                        <h3>Factory Game Prototype</h3>
+                        <p>Inspired by games like Factorio, I wanted to try creating a prototype that includes foundational mechanics such as building, automation, crafting, transportation, etc.</p>
+                        <p>2023</p>
+                        <div class="skills">
+                            <span class="skill">GDScript</span>
+                            <span class="skill">Godot</span>
+                            <span class="skill">Aesprite</span>
+                        </div>
+                    </div>
+                    <div class="right">
+                        <div class="gif-container">
+                            <img class="static-img" src="images/factorygame.png" alt="Factory Game Prototype screenshot" />
+                            <video
+                                class="animated-gif gif-video"
+                                src="videos/Factory Game.mp4"
+                                autoplay
+                                loop
+                                muted
+                                playsinline
+                            ></video>
+                        </div>
+                        <div style="margin-top: 5px; text-align: center;">
+                            <a href="https://docs.google.com/document/d/1yRrITslq1ZBc6WvqzEinWk6_76c6b-Qhv_xP54qxycI/edit?tab=t.0" class="stylish-button">Explore</a>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Homemade Motor & Capacitor -->
+            <article class="project-container">
+                <div class="Hbox">
+                    <div class="left">
+                        <h3>Homemade Motor & Capacitor</h3>
+                        <p>Created a DC motor and a capacitor using limited homemade materials. I reiterated the design until the motor reached 2490 rpm with only 1.5v and engineered the capacitor to 492 nF.</p>
+                        <p>2025</p>
+                        <div class="skills">
+                            <span class="skill">Circuits</span>
+                            <span class="skill">Multimeter</span>
+                        </div>
+                    </div>
+
+                    <div class="right">
+                        <div class="gif-container">
+                            <img class="static-img" src="images/DCMotor.jpeg" alt="Homemade Motor image" />
+                            <video
+                                class="animated-gif gif-video"
+                                src="videos/Motor.mp4"
+                                autoplay
+                                loop
+                                muted
+                                playsinline
+                            ></video>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Witch Game -->
+            <article class="project-container">
+                <div class="Hbox">
+                    <div class="left">
+                        <h3>Witch Game (In Progress)</h3>
+                        <p>This project started as a prototype of an open world crafting game and a chance to experiment with a new art style. It features multiple shaders, a robust saving/loading system, procedural terrain generation, inventories, containers, crafting, and more!</p>
+                        <p>2024</p>
+                        <div class="skills">
+                            <span class="skill">Godot</span>
+                            <span class="skill">GSSL</span>
+                            <span class="skill">Aesprite</span>
+                        </div>
+                    </div>
+
+                    <div class="right">
+                        <div class="gif-container">
+                            <img class="static-img" src="images/WitchGame.png" alt="Witch Game screenshot" />
+                            <video
+                                class="animated-gif gif-video"
+                                src="videos/Wizard Game Tree Cut.mp4"
+                                autoplay
+                                loop
+                                muted
+                                playsinline
+                            ></video>
+                        </div>
+                        <div style="margin-top: 5px; text-align: center;">
+                            <a href="https://docs.google.com/document/d/1SVZhiVXZD8Ix0X4UZT8QunFpqkyyzNlIZpYFTosU-Os/edit?tab=t.0" class="stylish-button">Explore</a>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Portfolio -->
+            <article class="project-container">
+                <div class="Hbox">
+                    <div class="left">
+                        <h3>Portfolio</h3>
+                        <p>This website! I created this portfolio using HTML and CSS to showcase my projects for my UCSB CCS application.</p>
+                        <p>2025</p>
+                        <div class="skills">
+                            <span class="skill">HTML</span>
+                            <span class="skill">CSS</span>
+                            <span class="skill">VSCode</span>
+                        </div>
+                    </div>
+
+                    <div class="right">
+                        <div class="image-box">
+                            <img class="static-img" src="images/Code.png" alt="Code screenshot" />
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Book Analyzer -->
+            <article class="project-container">
+                <div class="Hbox">
+                    <div class="left">
+                        <h3>Book Analyzer</h3>
+                        <p>Created a python script that could parse a book text (while handling special characters) and calculate the average length of word. I used this script to prove that the average length of words increases throughout the "Harry Potter" series.</p>
+                        <p>2023</p>
+                        <div class="skills">
+                            <span class="skill">Python</span>
+                        </div>
+                    </div>
+
+                    <div class="right">
+                        <div class="image-box">
+                            <img class="static-img" src="images/Harry.jpg" alt="Harry Potter book analysis" />
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+        </section>
+
+        <div class="spacer"></div>
+
+        <!-- Contact Section -->
+        <section id="contact-me">
+            <h2 style="text-align: center;">Contact Me</h2>
+            <hr />
+            <div class="spacer"></div>
+            <div class="contacts" style="text-align: center;">
+                <a class="contact" href="mailto:lucasfankhauser256@gmail.com">lucasfankhauser256@gmail.com</a>
+                <span> | </span>
+                <a class="contact" href="https://www.linkedin.com/in/lucas-fankhauser-499ab4365/">LinkedIn</a>
+                <span> | </span>
+                <a class="contact" href="https://github.com/LucasFankhauser">
+                    <img src="images/github-mark.png" alt="GitHub" width="25" height="25" />
+                </a>
+            </div>
+            <div class="spacer"></div>
+            <p style="text-align: center;">Made by Lucas Fankhauser © 2025</p>
+        </section>
+
+    </main>
+
+</body>
+</html>
