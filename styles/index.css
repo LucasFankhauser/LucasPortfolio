@@ -184,6 +184,7 @@ video {
     aspect-ratio: 3 / 2;
     overflow: hidden;
     border-radius: 8px;
+    cursor: pointer;
 }
 
 .static-img,
@@ -246,4 +247,22 @@ a:hover {
     max-width: 900px;
     margin: 0 auto;
     box-sizing: border-box; /* include padding in width */
+}
+
+.hover-hint {
+    position: absolute;
+    bottom: 8px;
+    right: 8px;
+    background: rgba(0, 0, 0, 0.65);
+    color: white;
+    font-size: 0.75rem;
+    padding: 4px 6px;
+    border-radius: 4px;
+    pointer-events: none;
+    opacity: 1;
+    transition: opacity 0.2s ease;
+}
+
+.gif-container:hover .hover-hint {
+    opacity: 0;
 }
