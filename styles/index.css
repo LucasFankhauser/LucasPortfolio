@@ -250,6 +250,7 @@ a:hover {
 }
 
 .hover-hint {
+    z-index: 99;
         position: absolute;
     justify-content: center;
     color: white;
@@ -266,5 +267,6 @@ a:hover {
 .gif-container:hover .hover-hint {
     opacity: 0;
 }
+
 
 
