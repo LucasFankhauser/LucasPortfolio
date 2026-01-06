@@ -263,9 +263,10 @@ a:hover {
     transition: opacity 0.3s ease;
 }
 
-.gif-container:hover .hover-hint {
+.right:hover .hover-hint {
     opacity: 0;
 }
+
 
 
 
